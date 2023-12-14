@@ -1,7 +1,4 @@
-CICD build:
-    
-# Workflow to build the environment
-name: ci
+name: cicd
 on: 
   push
 
