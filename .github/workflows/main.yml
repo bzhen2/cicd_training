@@ -1,4 +1,5 @@
-name: cicd
+# Workflow to build the environment
+name: ci
 on: 
   push
 
@@ -17,3 +18,8 @@ jobs:
          run: |
            mvn package
            ls -l
+       - name: Upload Artifact
+         uses: actions/upload-artifact@v4
+         with:
+           name: devops-war
+           path: target/devops.war
