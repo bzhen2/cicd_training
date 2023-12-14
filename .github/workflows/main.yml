@@ -1,5 +1,5 @@
 # Workflow to build the environment
-name: cicd
+name: CI
 on: 
   push
 
